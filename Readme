@@ -1,0 +1,5 @@
+cd client
+docker run -it --network="host" $(docker build -q .)
+
+cd server
+docker run -it --network="host" $(docker build -q .)
